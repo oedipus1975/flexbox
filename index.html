@@ -1,0 +1,75 @@
+<!-- first example -->
+<div class="container">
+  <form action="">
+    <div class="form-row">
+      <label for="name">Name:</label>
+      <input type="text" id="name">
+    </div>
+    <div class="form-row">
+      <label for="favColor">Favorite Color:</label>
+      <input type="text" id="favColor">
+    </div>
+  </form>
+</div>
+
+<!-- second example -->
+<div class="column-layout">
+  <div class="main-column">
+    <h2>Main Column</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam voluptatibus soluta, consequuntur, reiciendis debitis omnis fugiat libero pariatur amet laudantium minima consectetur tenetur. Repudiandae, autem, voluptate modi deleniti sequi voluptatum!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi earum fugit veniam amet quae sint vitae numquam dolore sunt quod a odio officia voluptate doloribus, at. Cum quasi mollitia eaque. Voluptatibus soluta, consequuntur, reiciendis debitis omnis fugiat libero pariatur amet laudantium.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam voluptatibus soluta, consequuntur, reiciendis debitis omnis fugiat libero pariatur amet laudantium minima consectetur tenetur. Repudiandae, autem, voluptate modi deleniti sequi voluptatum!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi earum fugit veniam amet quae sint vitae numquam dolore sunt quod a odio officia voluptate doloribus, at. Cum quasi mollitia eaque.</p>
+  </div>
+
+  <div class="sidebar-one">
+    <h3>Sidebar One</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum modi nisi tenetur sint dignissimos nulla, blanditiis nesciunt.</p>
+  </div>
+
+  <div class="sidebar-two">
+    <h3>Sidebar Two</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum modi nisi tenetur sint dignissimos nulla, blanditiis nesciunt.</p>
+  </div>
+</div>
+
+<style>
+    .container{
+        
+       
+    }
+    .form-row{
+        display: flex;
+        padding: 10;
+    }
+    .form-row label{
+        padding-right: 20;
+    }
+    .form-row input{
+        flex:1;
+    }
+    
+   
+    .column-layout{
+        display:flex;
+        align-content: space-between;
+    }
+    .main-column{
+        flex:2;
+        order:2;
+        background-color: antiquewhite;
+            padding:20;
+            
+    }
+    .sidebar-one{
+        flex:1;
+        order:1;
+        padding:20;
+    }
+    .sidebar-two{
+        flex:1;
+        order:3;
+        padding:20;
+    }
+    
+</style>
